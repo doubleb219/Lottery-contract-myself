@@ -1,0 +1,2 @@
+@chainlink/contracts/=lib/chainlink-brownie-contracts/contracts/src/
+chainlink-brownie-contracts/=lib/chainlink-brownie-contracts/
