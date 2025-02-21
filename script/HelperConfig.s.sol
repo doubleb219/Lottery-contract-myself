@@ -48,4 +48,10 @@ contract HelperConfig is CodeConstants, Script {
             suscriptionId: 0
         });
     }
+    function getOrCreateAnvilEthConfig() public returns (NetworkConfig memory) {
+    // Check to see if we set an active network config
+        if (localNetworkConfig.vrfCoordinator != address(0)) {
+            return localNetworkConfig;
+        }
+    }
 }
